@@ -1,7 +1,7 @@
 function newPrice(currentPrice , discount ) {
     
   // Check first input type
-    if((typeof currentPrice !== 'number') || (typeof discount !== 'number')) {
+    if((typeof currentPrice !== 'number') || (typeof discount !== 'number')|| (discount < 0 && discount > 100)) {
         return "Invalid";
       }
 
